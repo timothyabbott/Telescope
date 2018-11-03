@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <title>Telescope Control</title>
+        <script src="//ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+        <h1> Telescope Control</h1>
+        <center><img src="/?action=stream"></img></center>
+
+        <div class="myDiv">
+            <button class="tel_but" id="U">U</button>
+            <button class="tel_but" id="D">D</button>
+            <button class="tel_but" id="L" name="name" onmousedown="go('L')" onmouseup="go('S')" >L</button>
+            <button class="tel_but" id="R" name="name" onmousedown="go('R')" onmouseup="go('S')">R</button>
+        </div>
+        <div class = "startstop">
+            <button class="tel_but" id="track" name="name" onclick="go('T')"> track </button>
+            <button class="tel_but" id="stop" name="name" onclick="go('S')"> stop </button>
+        </div>
+        <script type="text/javascript">
+function go(qry) {
+val = "name".value;
+new Ajax.Request('stuff.py?q=' + qry ,
+{method: 'GET'}
+);
+}
+</script>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

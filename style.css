@@ -1,0 +1,56 @@
+
+.myDiv {
+height:100px;
+width:100px;
+background-color: red;
+position: fixed;
+left: 0px;
+top: 0px;    
+}
+.startstop{
+height:25px;
+width:100px;
+background-color: green;
+position: fixed;
+left: 0px;
+top: 100px;    
+}
+
+h1{
+font-family: cursive;
+text-align:center;
+    
+}
+.tel_but{
+    
+    width: 30px;
+    width: 30px;
+}
+#U{
+    position: absolute;
+    top: 0%;
+    left: 35%;
+}
+#D{
+    position: relative;
+    top: 75%;
+    left:35%;
+}
+
+#L{
+    position: relative;
+    top: 38%;
+    right:32%;
+}
+#R{
+    
+    position: relative;
+    top: 38%;
+    left:0%;
+}
+#go{
+    width: 45px;
+}
+#stop{
+    width: 45px;
+}
